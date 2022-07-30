@@ -17,6 +17,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.core.content.ContextCompat
 import androidx.core.os.bundleOf
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.core.view.GravityCompat
 import androidx.navigation.ui.*
 import com.mabnets.egov.Util.showPermissionRequestExplanation
@@ -35,7 +36,7 @@ class Index : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        installSplashScreen()
         binding = ActivityIndexBinding.inflate(layoutInflater)
         setContentView(binding.root)
         val toolbar: Toolbar = findViewById(R.id.toolbar)

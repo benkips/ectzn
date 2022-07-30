@@ -30,19 +30,21 @@ class Home : Fragment(R.layout.fragment_home) {
             Navigation.findNavController(v).navigate(R.id.action_homescreen_to_eservices)
 
         }
-        binding.ev.setOnClickListener {v->
-            val c = "https://dis.ecitizen.go.ke/dashboard"
+        binding.bsee.setOnClickListener {v->
+            Navigation.findNavController(v).navigate(R.id.action_homescreen_to_eservices)
+
+        }
+        binding.breg.setOnClickListener {v->
+            val c = "https://accounts.ecitizen.go.ke/register"
             Navigation.findNavController(v).navigate(R.id.action_homescreen_to_wvinfo,
                 bundleOf("web" to c)
             )
 
         }
-        binding.eb.setOnClickListener {v->
+        /*binding.eb.setOnClickListener {v->
             val c = "https://brs.ecitizen.go.ke/"
             Navigation.findNavController(v).navigate(R.id.action_homescreen_to_wvinfo,bundleOf("web" to c))
-
-
-        }
+        }*/
 
         adView = AdView(context)
         binding.bannerContainertwo.addView(adView)

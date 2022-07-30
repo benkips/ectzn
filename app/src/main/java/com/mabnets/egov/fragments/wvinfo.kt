@@ -24,7 +24,7 @@ import com.mabnets.egov.databinding.FragmentWvinfoBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 
-@AndroidEntryPoint
+//@AndroidEntryPoint
 class wvinfo : Fragment(R.layout.fragment_wvinfo) {
 
     private  var _binding : FragmentWvinfoBinding?=null
