@@ -40,6 +40,7 @@ class Eservices : Fragment(R.layout.fragment_eservices) {
                     }
                 }
                 is Resource.Failure -> handleApiError(it) { fetchingurls() }
+                else -> {}
             }
 
         })
